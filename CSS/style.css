@@ -22,8 +22,6 @@ main {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-direction: column;
     background-color: white;
     height: 90%;
 }
@@ -38,9 +36,16 @@ main .StartPage{
 main .TestPage{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    align-items:center;
 }
+
+main .TestPage button {
+    display: flex;
+    align-items: flex-start;
+    background-color: red;
+}
+
+
 
 footer{
     display: flex;
