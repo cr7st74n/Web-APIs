@@ -26,25 +26,32 @@ main {
     flex-direction: column;
     background-color: white;
     height: 90%;
+    width: 100%;
+}
+
+main h1{
+    font-size: 500%;
 }
 
 main .StartPage{
+    width: 100%;
     padding: 2%;
     /* margin: 2%; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 main .TestPage{
+    width: 100%;
     /* margin: 2%; */
     display: flex;
     flex-direction: column;
     align-items:flex-start;
 }
 
-main button {
+.btn {
     color: white;
     margin-top: 5%;
     margin-bottom: 7%;
@@ -58,9 +65,9 @@ main button {
 
 }
 
-button:hover{ background-color: rgb(108, 93, 145);}
+.btn:hover{ background-color: rgb(108, 93, 145);}
 
-button:active{
+.btn:active{
     background-color: rgb(108, 93, 145);
     box-shadow: 0 5px rgb(0, 0, 0);;
     transform:translateY(3px);
@@ -69,10 +76,15 @@ button:active{
 p {
     margin-top: 6%;
     justify-items: center;
+    font-size: 200%;
 }
 
 
 footer{
     background-color: rgb(250, 219, 224);
-    height: 27px;
+    height: 5%;
+}
+
+.hide {
+    display: none;
 }
