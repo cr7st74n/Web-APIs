@@ -62,8 +62,23 @@ main .TestPage{
     background-color: rgb(84, 56, 150);
     box-shadow: 0 9px rgb(0, 0, 0);
     outline: none;
-
 }
+
+#ContButton{
+    color: white;
+    margin-top: 1.7%;
+    padding: 0.9%;
+    border-radius: 12px;
+    background-color: rgb(84, 56, 150);
+    box-shadow: 0 9px rgb(0, 0, 0);
+}
+#ContButton:hover{ background-color: rgb(108, 93, 145);}
+#ContButton:active{
+    background-color: rgb(108, 93, 145);
+    box-shadow: 0 5px rgb(0, 0, 0);;
+    transform:translateY(3px);
+}
+
 
 .btn:hover{ background-color: rgb(108, 93, 145);}
 
@@ -74,7 +89,7 @@ main .TestPage{
 }
 
 p {
-    margin-top: 6%;
+
     justify-items: center;
     font-size: 200%;
 }
