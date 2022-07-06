@@ -21,7 +21,16 @@ var startQuestions, posQuestions;
 
 
 startBtn.addEventListener("click", pageQuestions);
-continua.addEventListener("click", function(){})
+continua.addEventListener("click", function(){
+    startQuestions++;
+    jumpQuestion(posQuestions[startQuestions]);
+    if (posQuestions.length === startQuestions+1){
+        getQuestion.classList.add("hide");
+        ShowResponse.classList.add("hide");
+        continua.classList.add("hide");
+        questionbeg.classList.add("hide");
+    }
+})
 
 var timeLeft = 60;
 function countDown(){
@@ -51,8 +60,6 @@ function Questions(){
     startAgain();
     jumpQuestion(posQuestions[startQuestions]);
 }
-
-
 
 
 
@@ -101,6 +108,7 @@ function answers(obj){
         ShowResponse.innerText= "incorrect";
         //timeLeft=-10;
     }
+
 }
 
 
@@ -116,6 +124,51 @@ var JSquestions = [
     },
     {
         question:"Which operator is used to assign a value to a variable?",
+        answers: [
+            {text:"x", correct: false},
+            {text:"*", correct: false},
+            {text:"=", correct: true},
+            {text:"-", correct: false},
+        ]
+    },
+    {
+        question:"Which ..................................",
+        answers: [
+            {text:"x", correct: false},
+            {text:"*", correct: false},
+            {text:"=", correct: true},
+            {text:"-", correct: false},
+        ]
+    },
+    {
+        question:"............................................",
+        answers: [
+            {text:"x", correct: false},
+            {text:"*", correct: false},
+            {text:"=", correct: true},
+            {text:"-", correct: false},
+        ]
+    },
+    {
+        question:"Whic...........................................",
+        answers: [
+            {text:"x", correct: false},
+            {text:"*", correct: false},
+            {text:"=", correct: true},
+            {text:"-", correct: false},
+        ]
+    },
+    {
+        question:"Wh..........................................",
+        answers: [
+            {text:"x", correct: false},
+            {text:"*", correct: false},
+            {text:"=", correct: true},
+            {text:"-", correct: false},
+        ]
+    },
+    {
+        question:"Whi..............................................",
         answers: [
             {text:"x", correct: false},
             {text:"*", correct: false},
